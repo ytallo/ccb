@@ -1,0 +1,53 @@
+{
+    "publicFolder" : "/Users/sergiofilho/Documents/Desenvolvimento/pj-public/",
+
+    "cache" : 20000,
+
+
+    "saphyre" : {
+
+        "secret" : "umasenha",
+
+        "database" : {
+
+            "name" : "ccb",
+            "username" : "root",
+            "password" : "1901",
+
+            "pool" : {
+                "maxConnections" : 5,
+                "maxIdleTime" : 30
+            },
+
+            "logging" : true
+        },
+
+        "server" : {
+            "admin" : {
+                "enabled" : true,
+                "path" : "/admin"
+            },
+            "site" : {
+                "enabled" : true,
+                "path" : "/"
+            },
+            "port" : 8090
+        },
+
+        "application" : {
+            "preferredLanguage" : "pt_BR"
+        },
+
+        "socket" : {
+            "port" : 8082
+        },
+
+        "mongo" : {
+            "uri" : "mongodb://localhost/ccb-almoxarifado",
+            "user" : "",
+            "pass" : "",
+            "poolSize" : 5
+        }
+
+    }
+}

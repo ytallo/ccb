@@ -1,0 +1,11 @@
+{
+  "module": "ccb.core",
+  "dialects": {
+    "mysql": [
+      {
+        "version" : "1.0.0",
+        "upgrade": [ "schema.sql" ]
+      }
+    ]
+  }
+}
