@@ -1,0 +1,21 @@
+{
+  "name": "@ccb/ccb-core",
+  "version": "1.0.0",
+  "description": "CCB aplications for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ccb",
+    "core",
+    "saphyre",
+    "nodejs",
+    "angularjs"
+  ],
+  "author": "ytallo.layon@mail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@sergiofilhow/saphyre-core": "1.0.4"
+  }
+}
