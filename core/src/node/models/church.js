@@ -2,8 +2,8 @@
 
 module.exports = function(sequelize, DataTypes) {
 
-    var Crurch = sequelize.define('Crurch', {
-        crurch_id: {
+    var Church = sequelize.define('Church', {
+        church_id: {
             type: DataTypes.BIGINT,
             primaryKey: true,
             autoIncrement: true
@@ -14,14 +14,14 @@ module.exports = function(sequelize, DataTypes) {
         immobile_type : DataTypes.INTEGER
 
     }, {
-        tableName: 'ccb_crurch',
+        tableName: 'ccb_church',
         classMethods: {
             associate: function(models) {
-                Crurch.belongsTo(models.ccb.Address, {
+                Church.belongsTo(models.ccb.Address, {
                     as:'address',
                     foreignKey: 'address_id'
                 });
-                Crurch.belongsTo(models.ccb.Servant, {
+                Church.belongsTo(models.ccb.Servant, {
                     as: 'responsible',
                     foreignKey: 'servant_id'
                 })
@@ -35,7 +35,7 @@ module.exports = function(sequelize, DataTypes) {
         BORROWED: 2
     };
 
-    Crurch.ImmobileType = ImmobileType;
+    Church.ImmobileType = ImmobileType;
 
-    return Crurch;
+    return Church;
 };

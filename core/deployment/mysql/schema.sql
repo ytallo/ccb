@@ -17,16 +17,16 @@ CREATE TABLE `ccb_address` (
   CONSTRAINT `fk_address_city` FOREIGN KEY (`city_id`) REFERENCES `ccb_city` (`city_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `ccb_crurch` (
-  `crurch_id` bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `ccb_church` (
+  `church_id` bigint(20) NOT NULL AUTO_INCREMENT,
   `code` varchar(12) NOT NULL,
   `name` varchar(255) NOT NULL,
   `immobile_type` int(1) DEFAULT NULL,
   `address_id` bigint(20) DEFAULT NULL,
   `servant_id` bigint(20) DEFAULT NULL,
-  PRIMARY KEY (`crurch_id`),
-  CONSTRAINT `fk_crurch_address` FOREIGN KEY (`address_id`) REFERENCES `ccb_address` (`address_id`),
-  CONSTRAINT `fk_crurch_servant` FOREIGN KEY (`servant_id`) REFERENCES `ccb_servant` (`servant_id`)
+  PRIMARY KEY (`church_id`),
+  CONSTRAINT `fk_church_address` FOREIGN KEY (`address_id`) REFERENCES `ccb_address` (`address_id`),
+  CONSTRAINT `fk_church_servant` FOREIGN KEY (`servant_id`) REFERENCES `ccb_servant` (`servant_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `ccb_servant` (

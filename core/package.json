@@ -17,5 +17,16 @@
   "license": "ISC",
   "dependencies": {
     "@sergiofilhow/saphyre-core": "1.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-uglify": "^1.5.3",
+    "merge-stream": "^1.0.0",
+    "wiredep": "^4.0.0"
   }
 }
