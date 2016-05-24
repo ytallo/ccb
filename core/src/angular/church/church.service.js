@@ -8,22 +8,21 @@
 
     function ChurchService ($http) {
 
-    	var baseUrl = 'church/'
+        var baseUrl = 'church/'
         this.create = function(church) {
-        	return $http.post(baseUrl, church);
+            return {};
         };
 
         this.update = function(church) {
-        	return $http.put(baseUrl, church);
+            return {};
         };
 
         this.delete = function(id) {
-        	var url = baseUrl + '{id}';
-        	return $http.delete(url, id);
+            return {};
         };
 
         this.list = function() {
-        	return $http.get(baseUrl);
+            return [];
         };
 
         return this;

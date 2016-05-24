@@ -13,9 +13,7 @@
 		vm.churches = [];
 
 		vm.list = function() {
-			ChurchService.list().then(function(data) {
-				vm.churches = data;
-			})
+			return ChurchService.list();
 		}
 	}
 })();

@@ -14,7 +14,13 @@ module.exports = function churchController(Controller, churchService, SecurityCo
 	};
 
 	controller.create = function(req) {
+		var church = {
 
+		};
+
+		return churchService.create(church).then(function() {
+			return Promise.resolve();
+		})
 	};
 
 	controller.load();

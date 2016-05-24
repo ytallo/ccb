@@ -11,7 +11,11 @@ module.exports = function churchService(churchModel, models, SaphyreError) {
 			code : church.code,
 			name : church.name,
 			immobile_type : church.immobileType
+		}).then(function(created) {
+			church.id = created.church_id;
+			return church;
 		})
 	}
+
 	return this;
 }
