@@ -47,6 +47,9 @@ gulp.task('script', () => {
         .on('error', logError)
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('public/js/@ccb'));
+
+    gulp.src(['src/angular/**/*.html'])
+        .pipe(gulp.dest('public/views'));
 });
 
 gulp.task('style', () => {
